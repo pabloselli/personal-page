@@ -1173,3 +1173,10 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/**********************
+* CONFIG PABLO SELLI
+**********************/
+span.yellow {
+  color: #FFF000;
+}
