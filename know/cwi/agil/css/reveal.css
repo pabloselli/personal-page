@@ -1192,3 +1192,11 @@ ul li:before {
   position: relative;
   top: .1em;
 }
+/*********************************************
+ * TAGCLOUD
+ *********************************************/
+span.clouditem {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  /*line-height: 90%;*/
+}
