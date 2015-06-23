@@ -1174,29 +1174,5 @@ body {
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
 
-/**********************
-* CONFIG PABLO SELLI
-**********************/
-.yellow {color: #fcb415;}
 
-ul li {
-  list-style: none;
-  font-size: 90%;
-}
 
-ul li:before {
-  color: #fff000; 
-  content:"\2022"; 
-  font-size: 1.1em; 
-  padding-right:.25em; 
-  position: relative;
-  top: .1em;
-}
-/*********************************************
- * TAGCLOUD
- *********************************************/
-span.clouditem {
-  padding-left: 1.25em;
-  padding-right: 1.25em;
-  /*line-height: 90%;*/
-}

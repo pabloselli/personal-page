@@ -74,10 +74,10 @@
             var color;
 
             if (isBlackWhite) {
-                var col = Math.round(Math.random() * 155 + 100);
+                var col = Math.round(Math.random() * 200 + 130);
                 color = 'rgb('+ col  +',' + col + ',' + col + ')';
             } else {
-                color = 'hsl('+ Math.random()*360 +', 40%, 50%)';
+                color = 'hsl('+ Math.random()*360 +', 65%, 40%)';
             }
 
             return color;

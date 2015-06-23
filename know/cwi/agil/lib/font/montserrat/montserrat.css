@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.otf');
+    src: url('Montserrat-Bold.otf?#iefix') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+

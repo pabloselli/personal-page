@@ -1,5 +1,8 @@
+@import url(../../lib/font/montserrat/montserrat.css);
+/*
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+*/
 /**
  * Black theme for reveal.js.
  *
@@ -263,3 +266,52 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #e7ad52; }
+
+/**************************
+* CONFIGURAÇÕES PABLO SELLI
+***************************/
+.yellow {color: #fcb415;}
+
+ul li {
+  list-style: none;
+  font-size: 90%;
+}
+
+ul li:before {
+  color: #fff000; 
+  content:"\2022"; 
+  font-size: 1.1em; 
+  padding-right:.25em; 
+  position: relative;
+  top: .1em;
+}
+/*********************************************
+ * TAGCLOUD
+ *********************************************/
+span.clouditem {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  /*line-height: 90%;*/
+}
+
+span.tagcloud-yellow { 
+  font-size: 110%;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  color: #fcb415;
+}
+span.tagcloud {
+  font-size: 105%;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+}
+
+#coluna1 {
+  width: 50%;
+  float: left;
+}
+#coluna2 {
+  width: 50%;
+  float: left;
+}
+
