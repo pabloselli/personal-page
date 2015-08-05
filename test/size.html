@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Device Info</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="author" content="Pablo Luis Morais Selli">
+	<title>get device info</title>
 </head>
 <body>
 	<h3>Window size is <span class="window-size"></span></h3>
-	<p>Tamanho da janela</p>
 	<hr>
 	<h3>Screen size is <span class="screen-size"></span></h3>
-	<p>Tamanho da tela </p>
 	<hr>
 	<h3>User Agent</h3>
 	<p> <span class="user-agent"></span></p>
-
 	<script>
-	function sizeOfThings(){
+	function getInfo(){
 	var windowWidth = window.innerWidth;
 	var windowHeight = window.innerHeight;
-
 	var screenWidth = screen.width;
 	var screenHeight = screen.height;
-
 	var userAgent = navigator.userAgent;
-
 	document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
 	document.querySelector('.screen-size').innerHTML = screenWidth + 'x' + screenHeight;
 	document.querySelector('.user-agent').innerHTML = userAgent;
-
 	};
-	sizeOfThings();
-
+	getInfo();
 	window.addEventListener('resize', function(){
-	sizeOfThings();
-	});	
+	getInfo();
+	});
 	</script>
-	<style>
-		body {font-size: 1.3em;}
-	</style>	
 </body>
 </html>
