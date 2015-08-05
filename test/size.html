@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="initial-scale=1">
 	<meta charset="UTF-8">
 	<meta name="author" content="Pablo Luis Morais Selli">
 	<title>get device info</title>
+	<style>
+	html {font-size: 100%;} 
+	p { font-size: 2em;}
+	</style>
 </head>
 <body>
-	<h3>Window size is <span class="window-size"></span></h3>
+	<p><b>Window size is:</b> <span class="window-size"></span></p>
 	<hr>
-	<h3>Screen size is <span class="screen-size"></span></h3>
+	<p><b>Screen size is:</b> <span class="screen-size"></span></p>
 	<hr>
-	<h3>User Agent</h3>
-	<p> <span class="user-agent"></span></p>
+	<p><b>UserAgent is:</b> <span class="user-agent"></span></p>
 	<script>
-	function getInfo(){
-	var windowWidth = window.innerWidth;
-	var windowHeight = window.innerHeight;
-	var screenWidth = screen.width;
-	var screenHeight = screen.height;
-	var userAgent = navigator.userAgent;
-	document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
-	document.querySelector('.screen-size').innerHTML = screenWidth + 'x' + screenHeight;
-	document.querySelector('.user-agent').innerHTML = userAgent;
-	};
-	getInfo();
-	window.addEventListener('resize', function(){
-	getInfo();
-	});
+		function getInfo(){
+		var windowWidth = window.innerWidth;
+		var windowHeight = window.innerHeight;
+		var screenWidth = screen.width;
+		var screenHeight = screen.height;
+		var userAgent = navigator.userAgent;
+		document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
+		document.querySelector('.screen-size').innerHTML = screenWidth + 'x' + screenHeight;
+		document.querySelector('.user-agent').innerHTML = userAgent;
+		};
+		getInfo();
+		window.addEventListener('resize', function(){
+		getInfo();
+		});
 	</script>
 </body>
 </html>
